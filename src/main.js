@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import MapContainer from './MapContainer';
 
-createApp(App).mount('#app')
+createApp(MapContainer).mount('#app')
