@@ -37,7 +37,23 @@ export default {
 .search-bar {
 	display: flex;
 	justify-content: center;
-	margin: 20px 0;
+	align-items: center;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.09);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 
+	0 8px 32px rgba(0, 0, 0, 0.1),
+	inset 0 1px 0 rgba(255, 255, 255, 0.5),
+	inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+	inset 0 0 6px 3px rgba(255, 255, 255, 0.3);
+	padding: 8px 10px;
+	z-index: 999;
 }
 .search-bar input {
 	width: 300px;
