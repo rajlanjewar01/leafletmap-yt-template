@@ -39,8 +39,9 @@ export default {
 @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
 
 #map { 
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	margin-top: 10px;
+	border-radius: 20px;
 }
 </style>
