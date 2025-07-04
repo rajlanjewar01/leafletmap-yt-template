@@ -2,7 +2,7 @@
 	<div class="search-bar">
 		<form @submit.prevent="emitSearch">
 			<input
-				v-model="query"
+				v-model.trim="query"
 				type="text"
 				placeholder="Search for a location"
 			>
@@ -26,9 +26,7 @@ export default {
 	methods: {
 		// 2. Search location
 		emitSearch() {
-			if(this.query.trim()) {
-				this.$emit('searchLocation', this.query.trim());
-			}
+			this.$emit('searchLocation', this.query);
 		}
 	}
 }
